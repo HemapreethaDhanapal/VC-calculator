@@ -1,0 +1,73 @@
+{
+    "industry": {
+        "options": [
+            "Healthcare", 
+            "Banking", 
+            "Insurance", 
+            "Lending", 
+            "Investment", 
+            "Payments", 
+            "Manufacturing", 
+            "Transportation", 
+            "Retail and wholesale", 
+            "Oil & Gas", 
+            "Professional services", 
+            "Telecommunications", 
+            "Engineering & Construction", 
+            "Utilities", 
+            "Public sector", 
+            "Real estate", 
+            "Entertainment", 
+            "Information technologies", 
+            "Multi-industry", 
+            "Other"
+        ],
+        "inputType": "radio"
+    },
+    "companySize": {
+        "options": [
+            "1-10 employees", 
+            "11-50 employees", 
+            "51-200 employees", 
+            "201-500 employees", 
+            "501-1,000 employees", 
+            "1,001-5,000 employees", 
+            "5,001-10,000 employees", 
+            "10,000+ employees"
+        ],
+        "inputType": "radio"
+    },
+    "services": {
+        "options": [
+            "Health check & optimization", 
+            "Design & deployment", 
+            "Customization & development", 
+            "Fine-tuning & delivery", 
+            "Support & maintenance", 
+            "Training", 
+            "SIEM-based SOC/SOAR services", 
+            "QLEAN app suite", 
+            "Other"
+        ],
+        "inputType": "checkbox"
+    },
+    "workModel": {
+        "options": [
+            "Onsite", 
+            "Remote", 
+            "Hybrid", 
+            "Not sure"
+        ],
+        "inputType": "radio"
+    },
+    "location": {
+        "options": [
+            "APAC & Japan", 
+            "EMEA", 
+            "North America", 
+            "South America", 
+            "Other"
+        ],
+        "inputType": "radio"
+    }
+}
