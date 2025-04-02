@@ -20,7 +20,7 @@
         .steps-navigation div { padding: 10px; cursor: pointer; background: #ddd; border-radius: 5px; }
         .steps-navigation div.active { background: #007bff; color: white; }
         .steps-navigation div.disabled { background: #ccc; pointer-events: none; opacity: 0.5; }
-        .steps-navigation div.active.disabled{background: #007bff;pointer-events: inherit; opacity:1; }
+        .error-msg { color: red; font-weight: bold; display: block; margin-top: 5px; opacity: 0; transition: opacity 0.3s ease-in-out; }
     </style>
 </head>
 <body>
@@ -31,31 +31,36 @@
             <div class="step active" id="step1">
                 <h3>What is your industry?</h3>
                 <div id="industryOptions"></div>
+                <span class="error-msg" id="error1">Please select an option.</span>
             </div>
             <div class="step" id="step2">
                 <h3>What is the size of your company?</h3>
                 <div id="companySizeOptions"></div>
+                <span class="error-msg" id="error2">Please select an option.</span>
             </div>
             <div class="step" id="step3">
                 <h3>What SIEM services are you interested in?</h3>
                 <div id="serviceOptions"></div>
+                <span class="error-msg" id="error3">Please select at least one service.</span>
             </div>
             <div class="step" id="step4">
                 <h3>What work model do you prefer?</h3>
                 <div id="workModelOptions"></div>
                 <h3>Where are you located?</h3>
                 <div id="locationOptions"></div>
+                <span class="error-msg" id="error4">Please select your preferences.</span>
             </div>
             <div class="step" id="step5">
                 <h3>Your Contact Data</h3>
-                <label>Full Name: <input type="text" id="fullName" required></label>
-                <label>Company Name: <input type="text" id="companyName" required></label>
-                <label>Work Email: <input type="email" id="workEmail" required></label>
+                <label>Full Name: <input type="text" id="fullName"></label>
+                <label>Company Name: <input type="text" id="companyName"></label>
+                <label>Work Email: <input type="email" id="workEmail"></label>
                 <label>Phone Number: <input type="text" id="phoneNumber"></label>
+                <span class="error-msg" id="error5">Please fill all required fields.</span>
             </div>
             <div class="button-group">
                 <button type="button" id="prevBtn" onclick="changeStep(-1)" class="hidden">Back</button>
-                <button type="button" id="nextBtn" onclick="changeStep(1)" disabled>Next</button>
+                <button type="button" id="nextBtn" onclick="changeStep(1)">Next</button>
                 <button type="submit" id="submitBtn" class="hidden">Finish</button>
             </div>
         </form>
@@ -83,6 +88,7 @@
             });
         }
 
+
         populateOptions('industryOptions', formData.industry);
         populateOptions('companySizeOptions', formData.companySize);
         populateOptions('serviceOptions', formData.services, "checkbox");
@@ -95,50 +101,62 @@
         const nextBtn = document.getElementById('nextBtn');
         const submitBtn = document.getElementById('submitBtn');
         const stepsNav = document.getElementById('stepsNav');
-        let validSteps = [false, false, false, false, false];
 
         function updateNavigation() {
             stepsNav.innerHTML = '';
             steps.forEach((_, index) => {
                 const stepNav = document.createElement('div');
                 stepNav.innerText = `Step ${index + 1}`;
-                stepNav.classList.remove('active');
-                if (index + 1 === currentStep) {
-                    stepNav.classList.add('active');
-                }
-                if (validSteps[index]) {
-                    stepNav.classList.remove('disabled');
-                    stepNav.onclick = () => goToStep(index + 1);
-                } else {
-                    stepNav.classList.add('disabled');
-                    stepNav.onclick = null;
-                }
-
+                stepNav.classList.toggle('active', index + 1 === currentStep);
                 stepsNav.appendChild(stepNav);
             });
         }
 
         function validateStep(step) {
-            const stepInputs = steps[step - 1].querySelectorAll('input, textarea');
+            const stepElement = steps[step - 1];
+            const stepInputs = stepElement.querySelectorAll('input, textarea');
             let isValid = false;
-
+            
             stepInputs.forEach(input => {
                 if ((input.type === "radio" || input.type === "checkbox") && input.checked) {
                     isValid = true;
                 } else if ((input.type === "text" || input.type === "email" || input.tagName === "TEXTAREA") && input.value.trim()) {
                     isValid = true;
                 }
+
+                // Add event listener to hide error on valid input
+                input.addEventListener("input", () => {
+                    document.getElementById(`error${step}`).style.opacity = "0";
+                });
+
+                if (input.type === "radio" || input.type === "checkbox") {
+                    input.addEventListener("change", () => {
+                        document.getElementById(`error${step}`).style.opacity = "0";
+                    });
+                }
             });
 
             return isValid;
         }
 
-        function validateSelection() {
-            validSteps[currentStep - 1] = validateStep(currentStep); 
-            nextBtn.disabled = !validSteps[currentStep - 1]; 
+        function changeStep(direction) {
+            const errorMsg = document.getElementById(`error${currentStep}`);
+            if (direction === 1) {
+                if (!validateStep(currentStep)) {
+                    errorMsg.style.opacity = "1";
+                    return;
+                } else {
+                    errorMsg.style.opacity = "0";
+                }
+            }
+            steps[currentStep - 1].classList.remove('active');
+            currentStep += direction;
+            steps[currentStep - 1].classList.add('active');
             updateNavigation();
+            prevBtn.classList.toggle('hidden', currentStep === 1);
+            nextBtn.classList.toggle('hidden', currentStep === steps.length);
+            submitBtn.classList.toggle('hidden', currentStep !== steps.length);
         }
-
         function goToStep(step) {
             steps[currentStep - 1].classList.remove('active');
             currentStep = step;
@@ -150,16 +168,7 @@
             validateSelection();
         }
 
-        function changeStep(direction) {
-            if (direction === 1 && !validSteps[currentStep - 1]) {
-                alert("Please fill out the required fields before proceeding.");
-                return;
-            }
-            goToStep(currentStep + direction);
-        }
-
         updateNavigation();
-        validateSelection();
     </script>
 </body>
 </html>
