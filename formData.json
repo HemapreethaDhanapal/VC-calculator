@@ -1,73 +1,636 @@
-{
-    "industry": {
-        "options": [
-            "Healthcare", 
-            "Banking", 
-            "Insurance", 
-            "Lending", 
-            "Investment", 
-            "Payments", 
-            "Manufacturing", 
-            "Transportation", 
-            "Retail and wholesale", 
-            "Oil & Gas", 
-            "Professional services", 
-            "Telecommunications", 
-            "Engineering & Construction", 
-            "Utilities", 
-            "Public sector", 
-            "Real estate", 
-            "Entertainment", 
-            "Information technologies", 
-            "Multi-industry", 
-            "Other"
-        ],
-        "inputType": "radio"
-    },
-    "companySize": {
-        "options": [
-            "1-10 employees", 
-            "11-50 employees", 
-            "51-200 employees", 
-            "201-500 employees", 
-            "501-1,000 employees", 
-            "1,001-5,000 employees", 
-            "5,001-10,000 employees", 
-            "10,000+ employees"
-        ],
-        "inputType": "radio"
-    },
-    "services": {
-        "options": [
-            "Health check & optimization", 
-            "Design & deployment", 
-            "Customization & development", 
-            "Fine-tuning & delivery", 
-            "Support & maintenance", 
-            "Training", 
-            "SIEM-based SOC/SOAR services", 
-            "QLEAN app suite", 
-            "Other"
-        ],
-        "inputType": "checkbox"
-    },
-    "workModel": {
-        "options": [
-            "Onsite", 
-            "Remote", 
-            "Hybrid", 
-            "Not sure"
-        ],
-        "inputType": "radio"
-    },
-    "location": {
-        "options": [
-            "APAC & Japan", 
-            "EMEA", 
-            "North America", 
-            "South America", 
-            "Other"
-        ],
-        "inputType": "radio"
+[
+    {
+        "key-1": {
+            "column": "1",
+            "questions": [
+                {
+                    "title": "*What is your industry?",
+                    "options": [
+                        {
+                            "name": "Healthcare",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "Banking",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "Insurance",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "Lending",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "Investment",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "Payments",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "Manufacturing",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "Transportation",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "Retail and wholesale",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "Oil & Gas",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "Professional services",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "Telecommunications",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "Engineering & Construction",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "Utilities",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "Public sector",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "Real estate",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "Entertainment",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "Information technologies",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "Multi-industry",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "Other",
+                            "type": "radio",
+                            "include": "textarea"
+                        }
+                    ],
+                    "isRequired": "yes"
+                }
+            ],
+            "dom-class": "col-1"
+        },
+        "key-2": {
+            "column": "1",
+            "questions": [
+                {
+                    "title": "*At what stage is your IT initiative?",
+                    "options": [
+                        {
+                            "name": "We’re looking for a vendor that would implement a turnkey database solution for us",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "We need a consultation on database solution development",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "Other",
+                            "type": "radio",
+                            "include": "textarea"
+                        }
+                    ],
+                    "isRequired": "yes"
+                }
+            ],
+            "dom-class": "col-1"
+        },
+        "key-3": {
+            "column": "1",
+            "questions": [
+                {
+                    "title": "What kind of software should your database support? Check all that apply.",
+                    "options": [
+                        {
+                            "name": "ERP",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "CRM",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "SCM software",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Ecommerce platform",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "EHR/EMR",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "LIS/LIMS",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "IoT device control and monitoring systems",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Financial management software",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Inventory management software",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Asset management software",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Production systems (e.g., HMI, SCADA)",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Practice management software",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Content management systems (CMS)",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "HR software",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Other",
+                            "type": "checkbox",
+                            "include": "textarea"
+                        }
+                    ],
+                    "isRequired": "yes"
+                }
+            ],
+            "dom-class": "col-1"
+        },
+        "key-4": {
+            "column": "2",
+            "questions": [
+                {
+                    "title": "*How many data sources will provide data for your database?",
+                    "options": [
+                        {
+                            "name": "1-2",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "2-5",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "5-10",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "10-15",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "15-20",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": ">20",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "Not sure",
+                            "type": "radio",
+                            "include": ""
+                        }
+                    ],
+                    "isRequired": "yes"
+                },
+                {
+                    "title": "If possible, specify the type of data sources for your database, e.g., manual user input, POS systems, APIs, IoT sensors.",
+                    "options": [
+                        {
+                            
+                            "name": "",
+                            "type": "",
+                            "include": "textarea"
+                        }
+                    ],
+                    "isRequired": "yes"
+                }
+            ],
+            "dom-class": "col-1"
+        },
+        "key-5": {
+            "column": "2",
+            "questions": [
+                {
+                    "title": "*What are your current data storage formats? Check all that apply.",
+                    "options": [
+                        {
+                            "name": "Structured (SQL, XLS/XLSX, Parquet, Avro)",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Semi-structured (JSON, XML, YAML, HTML BSON, Avro/ORC, DICOM, HL7)",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Unstructured (JPEG/JPG, PNG, MP3, WAV)",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Not sure",
+                            "type": "checkbox",
+                            "include": ""
+                        }
+                    ],
+                    "isRequired": "yes"
+                },
+                {
+                    "title": "*What is the approximate volume of data your database should store?",
+                    "options": [
+                        {
+                            "name": "<1 TB",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "1-4 TB",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "4-32 TB",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "32-256 TB",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "256 TB - 2 PB",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": ">2 PB",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "Not sure",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "Other",
+                            "type": "radio",
+                            "include": "textarea"
+                        }
+                    ],
+                    "isRequired": "yes"
+                }
+            ],
+            "dom-class": "col-1"
+        },
+        "key-6": {
+            "column": "2",
+            "questions": [
+                {
+                    "title": "*What data volume growth do you expect during the next 12 months?",
+                    "options": [
+                        {
+                            "name": "<10%",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "10%-50%",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "50%-100%",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "100%-200%",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": ">200%",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "Not sure",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "Other",
+                            "type": "radio",
+                            "include": "textarea"
+                        }
+                    ],
+                    "isRequired": "yes"
+                },
+                {
+                    "title": "*How fast should apps and users be able to retrieve data from the database?",
+                    "options": [
+                        {
+                            "name": "1-10ms (for search engines, ad tech)",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "100ms-1s (for BI tools, CMSs, transactional systems)",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "1-5s (for data warehouses, archival data, batch processing)",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "5-30s (for archived records, backups, scientific data)",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": ">30s (for legal archives, disaster recovery, historical data)",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "Not sure",
+                            "type": "radio",
+                            "include": ""
+                        }
+                    ],
+                    "isRequired": "yes"
+                }
+            ],
+            "dom-class": "col-1"
+        },
+        "key-7": {
+            "column": "2",
+            "questions": [
+                {
+                    "title": "*Do you have any preferences for the environment?",
+                    "options": [
+                        {
+                            "name": "On-premises",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "Cloud",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "Hybrid (cloud and on-premises)",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "Not sure",
+                            "type": "radio",
+                            "include": ""
+                        }
+                    ],
+                    "isRequired": "yes"
+                },
+                {
+                    "title": "*Do you have any tech stack preferences, incl. cloud platforms?",
+                    "options": [
+                        {
+                            "name": "No",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "Yes",
+                            "type": "radio",
+                            "include": "textarea"
+                        }
+                    ],
+                    "isRequired": "yes"
+                }
+            ],
+            "dom-class": "col-1"
+        },
+        "key-8": {
+            "column": "2",
+            "questions": [
+                {
+                    "title": "*Are there any compliance requirements for your database? Check all that apply.",
+                    "options": [
+                        {
+                            "name": "None",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "HIPAA",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "PCI DSS",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "GLBA",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "AML/KYC",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "GDPR",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "SOC1/SOC2",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "NIST",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "SFDA (for the KSA)",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "ESMA (for the UAE)",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "PDPL (for the UAE)",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "We’ll require your advice on compliance",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Other",
+                            "type": "checkbox",
+                            "include": "textarea"
+                        }
+                    ],
+                    "isRequired": "yes"
+                }
+            ],
+            "dom-class": "col-1"
+        },
+        "key-9": {
+            "column": "2",
+            "questions": [
+                {
+                    "title": "Here, you can add any details you want to share with us:",
+                    "options": [
+                        {
+                            "name": "",
+                            "type": "",
+                            "include": "textarea"
+                        }
+                    ],
+                    "isRequired": "no"
+                },
+                {
+                    "title": "*Full name",
+                    "options": [
+                        {
+                            "name": "",
+                            "type": "inputtext",
+                            "include": ""
+                        }
+                    ],
+                    "isRequired": "yes"
+                },
+                {
+                    "title": "*Company name",
+                    "options": [
+                        {
+                            "name": "",
+                            "type": "inputtext",
+                            "include": ""
+                        }
+                    ],
+                    "isRequired": "yes"
+                },
+                {
+                    "title": "*Work email",
+                    "options": [
+                        {
+                            "name": "",
+                            "type": "inputtext",
+                            "include": ""
+                        }
+                    ],
+                    "isRequired": "yes"
+                },
+                {
+                    "title": "Phone number",
+                    "options": [
+                        {
+                            "name": "",
+                            "type": "inputtext",
+                            "include": ""
+                        }
+                    ],
+                    "isRequired": "yes"
+                }
+            ],
+            "dom-class": "col-1"
+        }
     }
-}
+]

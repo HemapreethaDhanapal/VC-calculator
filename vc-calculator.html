@@ -20,83 +20,116 @@
         .steps-navigation div { padding: 10px; cursor: pointer; background: #ddd; border-radius: 5px; }
         .steps-navigation div.active { background: #007bff; color: white; }
         .steps-navigation div.disabled { background: #ccc; pointer-events: none; opacity: 0.5; }
-        .error-msg { color: red; font-weight: bold; display: block; margin-top: 5px; opacity: 0; transition: opacity 0.3s ease-in-out; }
-    </style>
+        .error-msg { color: red; display: block; margin-top: 5px; opacity: 0; transition: opacity 0.3s ease-in-out; }
+        .input-textarea{width:auto;}
+   </style>
 </head>
 <body>
     <div class="container">
         <h2>Cost Calculator</h2>
         <div class="steps-navigation" id="stepsNav"></div>
-        <form id="calculatorForm">
-            <div class="step active" id="step1">
-                <h3>What is your industry?</h3>
-                <div id="industryOptions"></div>
-                <span class="error-msg" id="error1">Please select an option.</span>
-            </div>
-            <div class="step" id="step2">
-                <h3>What is the size of your company?</h3>
-                <div id="companySizeOptions"></div>
-                <span class="error-msg" id="error2">Please select an option.</span>
-            </div>
-            <div class="step" id="step3">
-                <h3>What SIEM services are you interested in?</h3>
-                <div id="serviceOptions"></div>
-                <span class="error-msg" id="error3">Please select at least one service.</span>
-            </div>
-            <div class="step" id="step4">
-                <h3>What work model do you prefer?</h3>
-                <div id="workModelOptions"></div>
-                <h3>Where are you located?</h3>
-                <div id="locationOptions"></div>
-                <span class="error-msg" id="error4">Please select your preferences.</span>
-            </div>
-            <div class="step" id="step5">
-                <h3>Your Contact Data</h3>
-                <label>Full Name: <input type="text" id="fullName"></label>
-                <label>Company Name: <input type="text" id="companyName"></label>
-                <label>Work Email: <input type="email" id="workEmail"></label>
-                <label>Phone Number: <input type="text" id="phoneNumber"></label>
-                <span class="error-msg" id="error5">Please fill all required fields.</span>
-            </div>
-            <div class="button-group">
-                <button type="button" id="prevBtn" onclick="changeStep(-1)" class="hidden">Back</button>
-                <button type="button" id="nextBtn" onclick="changeStep(1)">Next</button>
-                <button type="submit" id="submitBtn" class="hidden">Finish</button>
-            </div>
-        </form>
+        <form id="calculatorForm"></form>
+        <div class="button-group">
+            <button type="button" id="prevBtn" onclick="changeStep(-1)" class="hidden">Back</button>
+            <button type="button" id="nextBtn" onclick="changeStep(1)">Next</button>
+            <button type="submit" id="submitBtn" class="hidden">Finish</button>
+        </div>
     </div>
     <script>
-        const formData = {
-            industry: ["Healthcare", "Banking", "Insurance", "Lending", "Investment", "Payments", "Manufacturing", "Transportation", "Retail and wholesale", "Oil & Gas", "Professional services", "Telecommunications", "Engineering & Construction", "Utilities", "Public sector", "Real estate", "Entertainment", "Information technologies", "Multi-industry", "Other"],
-            companySize: ["1-10 employees", "11-50 employees", "51-200 employees", "201-500 employees", "501-1,000 employees", "1,001-5,000 employees", "5,001-10,000 employees", "10,000+ employees"],
-            services: ["Health check & optimization", "Design & deployment", "Customization & development", "Fine-tuning & delivery", "Support & maintenance", "Training", "SIEM-based SOC/SOAR services", "QLEAN app suite", "Other"],
-            workModel: ["Onsite", "Remote", "Hybrid", "Not sure"],
-            location: ["APAC & Japan", "EMEA", "North America", "South America", "Other"]
-        };
+        document.addEventListener("DOMContentLoaded", async function () {
+            try {
+                const response = await fetch("http://localhost:3000/0");
+                const formData = await response.json();
+                populateForm(formData);
+            } catch (error) {
+                console.error("Error fetching JSON data:", error);
+            }
+        });
 
-        function populateOptions(id, options, type = "radio") {
-            const container = document.getElementById(id);
-            options.forEach(option => {
-                const label = document.createElement('label');
-                if (option === "Other") {
-                    label.innerHTML = `<input type="${type}" name="${id}" value="${option}" onclick="validateSelection()"> ${option}
-                                    <textarea id="${id}_other" placeholder="Please specify..." oninput="validateSelection()"></textarea>`;
+        function populateForm(formData) {
+    const formContainer = document.getElementById("calculatorForm");
+    let stepIndex = 1;
+
+    Object.keys(formData).forEach((key) => {
+        const stepData = formData[key];
+        const stepDiv = document.createElement("div");
+        stepDiv.classList.add("step");
+        if (stepIndex === 1) stepDiv.classList.add("active");
+        stepDiv.id = `step${stepIndex}`; 
+
+        stepData.questions.forEach((question, qIndex) => {
+            const questionContainer = document.createElement("div");
+            const questionTitle = document.createElement("h4");
+            questionTitle.textContent = question.title;
+            questionContainer.appendChild(questionTitle);
+
+            const optionsContainer = document.createElement("div");
+
+            question.options.forEach(option => {
+                const label = document.createElement("label");
+                const inputName = `${key}_question${qIndex}`;
+
+                if (option.include === "textarea" && (!option.type || !option.name)) {
+                    label.innerHTML = `
+                        <textarea class="input-textarea" name="${inputName}_other" placeholder="Please specify..."></textarea>
+                    `;
+                } else if (option.type === "checkbox" && option.include === "textarea") {
+                    label.innerHTML = `
+                        <input type="checkbox" name="${inputName}" value="Other"> Other 
+                        <textarea class="input-textarea" name="${inputName}_other" placeholder="Please specify..." disabled></textarea>
+                    `;
+                } else if (option.type === "radio" && option.include === "textarea") { 
+                    label.innerHTML = `
+                        <input type="radio" name="${inputName}" value="Other"> Other 
+                        <textarea class="input-textarea" name="${inputName}_other" placeholder="Please specify..." disabled></textarea>
+                    `;
+                } else if (option.type === "checkbox") {
+                    label.innerHTML = `
+                        <input type="checkbox" name="${inputName}" value="${option.name}"> ${option.name}
+                    `;
+                } else if (option.type === "inputtext") {
+                    label.innerHTML = `
+                        <input type="text" name="${inputName}_input" placeholder="Enter your response...">
+                    `;
                 } else {
-                    label.innerHTML = `<input type="${type}" name="${id}" value="${option}" onclick="validateSelection()"> ${option}`;
+                    label.innerHTML = `
+                        <input type="radio" name="${inputName}" value="${option.name}"> ${option.name}
+                    `;
                 }
-                container.appendChild(label);
+
+                optionsContainer.appendChild(label);
             });
-        }
 
+            questionContainer.appendChild(optionsContainer);
+            stepDiv.appendChild(questionContainer);
+        });
 
-        populateOptions('industryOptions', formData.industry);
-        populateOptions('companySizeOptions', formData.companySize);
-        populateOptions('serviceOptions', formData.services, "checkbox");
-        populateOptions('workModelOptions', formData.workModel);
-        populateOptions('locationOptions', formData.location);
+        const errorMsg = document.createElement("span");
+        errorMsg.classList.add("error-msg");
+        errorMsg.id = `error${stepIndex}`;
+        errorMsg.textContent = "Please fill in the required fields.";
+        stepDiv.appendChild(errorMsg);
+
+        formContainer.appendChild(stepDiv);
+        stepIndex++;
+    });
+
+    document.querySelectorAll('input[type="radio"], input[type="checkbox"]').forEach(input => {
+        input.addEventListener("change", function() {
+            const parentLabel = this.closest("label");
+            const textarea = parentLabel ? parentLabel.querySelector("textarea") : null;
+
+            if (textarea) {
+                textarea.disabled = !this.checked;
+                if (this.checked) textarea.focus();
+            }
+        });
+    });
+
+    updateNavigation();
+}
 
         let currentStep = 1;
-        const steps = document.querySelectorAll('.step');
         const prevBtn = document.getElementById('prevBtn');
         const nextBtn = document.getElementById('nextBtn');
         const submitBtn = document.getElementById('submitBtn');
@@ -104,6 +137,7 @@
 
         function updateNavigation() {
             stepsNav.innerHTML = '';
+            const steps = document.querySelectorAll('.step');
             steps.forEach((_, index) => {
                 const stepNav = document.createElement('div');
                 stepNav.innerText = `Step ${index + 1}`;
@@ -113,18 +147,17 @@
         }
 
         function validateStep(step) {
-            const stepElement = steps[step - 1];
-            const stepInputs = stepElement.querySelectorAll('input, textarea');
+            const stepElement = document.getElementById(`step${step}`);
+            const stepInputs = stepElement.querySelectorAll('input');
             let isValid = false;
             
             stepInputs.forEach(input => {
                 if ((input.type === "radio" || input.type === "checkbox") && input.checked) {
                     isValid = true;
-                } else if ((input.type === "text" || input.type === "email" || input.tagName === "TEXTAREA") && input.value.trim()) {
+                } else if (input.type === "text" && input.value.trim()) {
                     isValid = true;
                 }
 
-                // Add event listener to hide error on valid input
                 input.addEventListener("input", () => {
                     document.getElementById(`error${step}`).style.opacity = "0";
                 });
@@ -140,35 +173,23 @@
         }
 
         function changeStep(direction) {
+            const steps = document.querySelectorAll('.step');
             const errorMsg = document.getElementById(`error${currentStep}`);
-            if (direction === 1) {
-                if (!validateStep(currentStep)) {
-                    errorMsg.style.opacity = "1";
-                    return;
-                } else {
-                    errorMsg.style.opacity = "0";
-                }
+            if (direction === 1 && !validateStep(currentStep)) {
+                errorMsg.style.opacity = "1";
+                return;
             }
+            errorMsg.style.opacity = "0";
+
             steps[currentStep - 1].classList.remove('active');
             currentStep += direction;
             steps[currentStep - 1].classList.add('active');
             updateNavigation();
-            prevBtn.classList.toggle('hidden', currentStep === 1);
-            nextBtn.classList.toggle('hidden', currentStep === steps.length);
-            submitBtn.classList.toggle('hidden', currentStep !== steps.length);
-        }
-        function goToStep(step) {
-            steps[currentStep - 1].classList.remove('active');
-            currentStep = step;
-            steps[currentStep - 1].classList.add('active');
-            updateNavigation();
-            prevBtn.classList.toggle('hidden', currentStep === 1);
-            nextBtn.classList.toggle('hidden', currentStep === steps.length);
-            submitBtn.classList.toggle('hidden', currentStep !== steps.length);
-            validateSelection();
-        }
 
-        updateNavigation();
+            prevBtn.classList.toggle('hidden', currentStep === 1);
+            nextBtn.classList.toggle('hidden', currentStep === steps.length);
+            submitBtn.classList.toggle('hidden', currentStep !== steps.length);
+        }
     </script>
 </body>
 </html>
