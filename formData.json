@@ -143,7 +143,7 @@
             "column": "1",
             "questions": [
                 {
-                    "title": "What kind of software should your database support? Check all that apply.",
+                    "title": "*What kind of software should your database support? Check all that apply.",
                     "options": [
                         {
                             "name": "ERP",
@@ -224,7 +224,7 @@
                     "isRequired": "yes"
                 }
             ],
-            "dom-class": "col-1-1"
+            "dom-class": "col-1-2"
         },
         "key-4": {
             "column": "2",
@@ -280,10 +280,10 @@
                             "include": "textarea"
                         }
                     ],
-                    "isRequired": "yes"
+                    "isRequired": "no"
                 }
             ],
-            "dom-class": "col-1"
+            "dom-class": "col-1-2"
         },
         "key-5": {
             "column": "2",
@@ -361,7 +361,7 @@
                     "isRequired": "yes"
                 }
             ],
-            "dom-class": "col-1"
+            "dom-class": "col-1-2"
         },
         "key-6": {
             "column": "2",
@@ -398,11 +398,6 @@
                             "name": "Not sure",
                             "type": "radio",
                             "include": ""
-                        },
-                        {
-                            "name": "Other",
-                            "type": "radio",
-                            "include": "textarea"
                         }
                     ],
                     "isRequired": "yes"
@@ -444,7 +439,7 @@
                     "isRequired": "yes"
                 }
             ],
-            "dom-class": "col-1"
+            "dom-class": "col-2-1"
         },
         "key-7": {
             "column": "2",
@@ -492,7 +487,7 @@
                     "isRequired": "yes"
                 }
             ],
-            "dom-class": "col-1"
+            "dom-class": "col-2-1"
         },
         "key-8": {
             "column": "2",
@@ -569,7 +564,7 @@
                     "isRequired": "yes"
                 }
             ],
-            "dom-class": "col-1"
+            "dom-class": "col-1-2"
         },
         "key-9": {
             "column": "2",
@@ -627,7 +622,7 @@
                             "include": ""
                         }
                     ],
-                    "isRequired": "yes"
+                    "isRequired": "no"
                 }
             ],
             "dom-class": "col-1"
