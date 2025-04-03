@@ -96,13 +96,13 @@
                         } else if (option.type === "checkbox" && option.include === "textarea") {
                             label.innerHTML = `
                             <div class="checkbox-textarea-row">
-                                <input type="checkbox" name="${inputName}" value="Other">Other 
-                                <textarea class="input-textarea" name="${inputName}_other" placeholder="Please specify..."></textarea>
+                                <input type="checkbox" name="${inputName}" value="Other"> 
+                                <textarea class="input-textarea" name="${inputName}_other" placeholder="Other (Please specify)"></textarea>
                             </div>`;
                         } else if (option.type === "radio" && option.include === "textarea") { 
                             label.innerHTML = `<div class="radio-textarea-row">
-                                <input type="radio" name="${inputName}" value="Other">Other 
-                                <textarea class="input-textarea" name="${inputName}_other" placeholder="Please specify..."></textarea><div>
+                                <input type="radio" name="${inputName}" value="Other"> 
+                                <textarea class="input-textarea" name="${inputName}_other" placeholder="Other (Please specify)"></textarea><div>
                             `;
                         } else if (option.type === "checkbox") {
                             label.innerHTML = `
