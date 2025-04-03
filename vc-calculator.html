@@ -35,7 +35,11 @@
         .col-2-1-1 .dom-class-column{column-count: 2;}
         .col-2-1-1 .question-container:nth-child(2) .dom-class-column{column-count: 1;}
         .col-2-1-1 .question-container:nth-child(2) .dom-class-column .textarea-row textarea{width: 100%;flex: 1; height: 80px;resize: none;}
-    </style>
+    .col-1-2-1 .dom-class-column:nth-child(1){column-count: 1;}
+        .col-1-2-1 .question-container:nth-child(2) .dom-class-column{column-count: 2;}
+        .col-1-2-1 .question-container:nth-child(1) .dom-class-column .textarea-row textarea{width: 100%;flex: 1; height: 80px;resize: none;}
+        .col-2-1-2 {column-count: 2;}
+        </style>
 </head>
 <body>
     <div class="container">
@@ -97,12 +101,12 @@
                             label.innerHTML = `
                             <div class="checkbox-textarea-row">
                                 <input type="checkbox" name="${inputName}" value="Other"> 
-                                <textarea class="input-textarea" name="${inputName}_other" placeholder="Other (Please specify)"></textarea>
+                                <textarea class="input-textarea" name="${inputName}_other" placeholder="${option.name} (Please specify)"></textarea>
                             </div>`;
                         } else if (option.type === "radio" && option.include === "textarea") { 
                             label.innerHTML = `<div class="radio-textarea-row">
                                 <input type="radio" name="${inputName}" value="Other"> 
-                                <textarea class="input-textarea" name="${inputName}_other" placeholder="Other (Please specify)"></textarea><div>
+                                <textarea class="input-textarea" name="${inputName}_other" placeholder="${option.name} (Please specify)"></textarea><div>
                             `;
                         } else if (option.type === "checkbox") {
                             label.innerHTML = `

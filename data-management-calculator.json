@@ -1,0 +1,533 @@
+[
+    {
+        "key-1": {
+            "column": "1",
+            "questions": [
+                {
+                    "title": "*What is your industry?",
+                    "options": [
+                        {
+                            "name": "Healthcare",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "Banking",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "Insurance",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "Lending",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "Investment",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "Payments",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "Manufacturing",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "Transportation",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "Retail and wholesale",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "Oil & Gas",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "Professional services",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "Telecommunications",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "Engineering & Construction",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "Utilities",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "Public sector",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "Real estate",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "Entertainment",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "Information technologies",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "Multi-industry",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "Other",
+                            "type": "radio",
+                            "include": "textarea"
+                        }
+                    ],
+                    "isRequired": "yes"
+                }
+            ],
+            "dom-class": "col-1-2"
+        },
+        "key-2": {
+            "column": "1",
+            "questions": [
+                {
+                    "title": "What is your current data volume?",
+                    "options": [
+                        {
+                            "name": "<1 TB",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "1–4 TB",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "4–32 TB",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "32–256 TB",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "256 TB –2 PB",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": ">2 PB",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "Not sure",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "Other",
+                            "type": "radio",
+                            "include": "textarea"
+                        }
+                    ],
+                    "isRequired": "no"
+                },
+                {
+                    "title": "*What data volume growth do you expect during the next 12 months?",
+                    "options": [
+                        {
+                            "name": "<10%",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "10%-50%",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "50%-100%",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "100%-200%",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": ">200%",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "Not sure",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "Other",
+                            "type": "radio",
+                            "include": "textarea"
+                        }
+                    ],
+                    "isRequired": "yes"
+                }
+            ],
+            "dom-class": "col-2-1"
+        },
+        "key-3": {
+            "column": "1",
+            "questions": [
+                {
+                    "title": "*Please specify the data sources. (Select all that apply)",
+                    "options": [
+                        {
+                            "name": "ERP",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "CRM",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "SCM",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "EHR /EMR",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "RCM",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "LIS/LIMS",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Practice management system",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "RPM",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Ecommerce platform",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Inventory management system",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Financial and accounting software",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "HR software",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "IoT devices and sensors",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "External sources (e.g., weather data, competitor prices, market data, social media)",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Other",
+                            "type": "checkbox",
+                            "include": "textarea"
+                        }
+                    ],
+                    "isRequired": "yes"
+                }
+            ],
+            "dom-class": "col-1-2"
+        },
+        "key-4": {
+            "column": "2",
+            "questions": [
+                {
+                    "title": "*What types of storage currently house your data?",
+                    "options": [
+                        {
+                            "name": "Central data warehouse",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Application databases (e.g., MySQL, PostgreSQL)",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Big data databases (e.g., Hadoop, Spark)",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Cloud storage (e.g., AWS S3, Azure Blob)",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Other big data storage (e.g., HDFS)",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Backups",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "On-premise servers",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Data lakes (e.g., raw data storage)",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "NoSQL databases (e.g., MongoDB, Cassandra)",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Other",
+                            "type": "checkbox",
+                            "include": "textarea"
+                        }
+                    ],
+                    "isRequired": "yes"
+                }
+            ],
+            "dom-class": "col-1-2"
+        },
+        "key-5": {
+            "column": "2",
+            "questions": [
+                {
+                    "title": "*Do you encounter any of the data quality issues below? Check all that apply.",
+                    "options": [
+                        {
+                            "name": "Errors in data (e.g., incorrect numeric entries, outliers)",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Missing fields (e.g., demographics data in customer profiles, SKU data in inventory datasets)",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Multiple versions of the same data (e.g., units of measurement, currencies, date formats)",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Untimely data updates",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Data is irrelevant to the current business needs",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "None",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Other",
+                            "type": "checkbox",
+                            "include": "textarea"
+                        }
+                    ],
+                    "isRequired": "yes"
+                }
+            ],
+            "dom-class": "col-1-1"
+        },
+        "key-6": {
+            "column": "2",
+            "questions": [
+                {
+                    "title": "*Are there any compliance requirements for your solution? Check all that apply.",
+                    "options": [
+                        {
+                            "name": "None",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "HIPAA",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "PCI DSS",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "GLBA",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "AML/KYC",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "GDPR",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "SOC1/SOC2",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "SFDA (for the KSA)",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "ESMA (for the UAE)",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "PDPL (for the UAE)",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Other",
+                            "type": "checkbox",
+                            "include": "textarea"
+                        }
+                    ],
+                    "isRequired": "yes"
+                }
+            ],
+            "dom-class": "col-1-2"
+        },
+        "key-7": {
+            "column": "2",
+            "questions": [
+                {
+                    "title": "Here, you can add any details you want to share with us:",
+                    "options": [
+                        {
+                            "name": "",
+                            "type": "",
+                            "include": "textarea"
+                        }
+                    ],
+                    "isRequired": "no"
+                },
+                {
+                    "title": "*Full name",
+                    "options": [
+                        {
+                            "name": "",
+                            "type": "inputtext",
+                            "include": ""
+                        }
+                    ],
+                    "isRequired": "yes"
+                },
+                {
+                    "title": "*Company name",
+                    "options": [
+                        {
+                            "name": "",
+                            "type": "inputtext",
+                            "include": ""
+                        }
+                    ],
+                    "isRequired": "yes"
+                },
+                {
+                    "title": "*Work email",
+                    "options": [
+                        {
+                            "name": "",
+                            "type": "inputtext",
+                            "include": ""
+                        }
+                    ],
+                    "isRequired": "yes"
+                },
+                {
+                    "title": "Phone number",
+                    "options": [
+                        {
+                            "name": "",
+                            "type": "inputtext",
+                            "include": ""
+                        }
+                    ],
+                    "isRequired": "no"
+                }
+            ],
+            "dom-class": "col-1"
+        }
+    }
+]
