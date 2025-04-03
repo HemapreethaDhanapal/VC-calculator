@@ -22,6 +22,7 @@
         .steps-navigation div.disabled { background: #ccc; pointer-events: none; opacity: 0.5; }
         .error-msg { color: red; display: block; margin-top: 5px; opacity: 0; transition: opacity 0.3s ease-in-out; }
         .input-textarea{width:auto;}
+        
    </style>
 </head>
 <body>
@@ -53,10 +54,9 @@
     Object.keys(formData).forEach((key) => {
         const stepData = formData[key];
         const stepDiv = document.createElement("div");
-        stepDiv.classList.add("step");
+        stepDiv.classList.add("step", stepData["dom-class"]); 
         if (stepIndex === 1) stepDiv.classList.add("active");
         stepDiv.id = `step${stepIndex}`; 
-
         stepData.questions.forEach((question, qIndex) => {
             const questionContainer = document.createElement("div");
             const questionTitle = document.createElement("h4");
@@ -64,6 +64,7 @@
             questionContainer.appendChild(questionTitle);
 
             const optionsContainer = document.createElement("div");
+            optionsContainer.classList.add("dom-class-column"); 
 
             question.options.forEach(option => {
                 const label = document.createElement("label");
@@ -138,12 +139,32 @@
         function updateNavigation() {
             stepsNav.innerHTML = '';
             const steps = document.querySelectorAll('.step');
+
             steps.forEach((_, index) => {
                 const stepNav = document.createElement('div');
                 stepNav.innerText = `Step ${index + 1}`;
                 stepNav.classList.toggle('active', index + 1 === currentStep);
+
+                if (index + 1 < currentStep) {
+                    stepNav.classList.add('clickable');
+                    stepNav.addEventListener("click", () => goToStep(index + 1));
+                } else {
+                    stepNav.classList.remove('clickable');
+                }
+
                 stepsNav.appendChild(stepNav);
             });
+        }
+        function goToStep(step) {
+            const steps = document.querySelectorAll('.step');
+            steps[currentStep - 1].classList.remove('active');
+            currentStep = step;
+            steps[currentStep - 1].classList.add('active');
+            updateNavigation();
+
+            prevBtn.classList.toggle('hidden', currentStep === 1);
+            nextBtn.classList.toggle('hidden', currentStep === steps.length);
+            submitBtn.classList.toggle('hidden', currentStep !== steps.length);
         }
 
         function validateStep(step) {
