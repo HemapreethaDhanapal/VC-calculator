@@ -1,0 +1,419 @@
+[
+    {
+        "key-1": {
+            "column": "1",
+            "questions": [
+                {
+                    "title": "*What type of company do you represent?",
+                    "options": [
+                        {
+                            "name": "An organization looking to integrate applications for internal use or data exchange with partners",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "A software provider creating custom integrations or APIs for its commercial software product",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "An innovative startup",
+                            "type": "radio",
+                            "include": ""
+                        },                        
+                        {
+                            "name": "Other",
+                            "type": "radio",
+                            "include": "textarea"
+                        }
+                    ],
+                    "isRequired": "yes"
+                }
+            ],
+            "dom-class": "col-1-1"
+        },
+        "key-2": {
+            "column": "1",
+            "questions": [
+                {
+                    "title": "*What type of software do you want to integrate?",
+                    "options": [
+                        {
+                            "name": "Enterprise apps (ERP, CRM, SCM, BI, etc.)",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Financial industry apps (banking, lending, insurance, DeFi, etc.)",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Healthcare software (EHR, telehealth, patient portals, etc.)",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Ecommerce software (e-store, e-catalog, loyalty app, etc.)",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Marketing automation software, AdTech",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Online learning platform",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "IoT apps (device control/monitoring)",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Fleet management software",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Service, government, or community portal",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Communication app (messenger, VoIP, etc.)",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Social network",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Booking app (ticketing, scheduling, etc.)",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "News and media app (IPTV, media player, etc.)",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "On-demand service marketplace",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Cybersecurity tools",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Other",
+                            "type": "checkbox",
+                            "include": "textarea"
+                        }
+                    ],
+                    "isRequired": "yes"
+                }
+            ],
+            "dom-class": "col-1-2"
+        },
+        "key-3": {
+            "column": "1",
+            "questions": [
+                {
+                    "title": "*How many different systems or applications need to be connected?",
+                    "options": [
+                        {
+                            "name": "2",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "3–5",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "5–10",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "10–20",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "20 or more",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "Not sure, we would like your guidance",
+                            "type": "radio",
+                            "include": ""
+                        }
+                    ],
+                    "isRequired": "yes"
+                },
+                {
+                    "title": "*What platforms are the to-be-integrated apps currently available on?",
+                    "options": [
+                        {
+                            "name": "Web (available via browser)",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Mobile (iOS)",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Mobile (Android)",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Desktop (installed on users' PCs)",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Other",
+                            "type": "checkbox",
+                            "include": "textarea"
+                        }
+                    ],
+                    "isRequired": "yes"
+                }
+            ],
+            "dom-class": "col-2-1"
+        },
+        "key-4": {
+            "column": "1",
+            "questions": [
+                {
+                    "title": "*Is at least one of the apps you need to integrate platform-based?",
+                    "options": [
+                        {
+                            "name": "No",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "Not sure",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        
+                        {
+                            "name": "Yes",
+                            "type": "radio",
+                            "include": "textarea"
+                        }
+                    ],
+                    "isRequired": "yes"
+                }
+            ],
+            "dom-class": "col-1-1"
+        },
+        "key-5": {
+            "column": "1",
+            "questions": [
+                {
+                    "title": "*Is at least one of the apps you need to integrate your proprietary or highly customized software?",
+                    "options": [
+                        {
+                            "name": "No",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "Not sure",
+                            "type": "radio",
+                            "include": ""
+                        },                        
+                        {
+                            "name": "Yes",
+                            "type": "radio",
+                            "include": "textarea"
+                        }
+                    ],
+                    "isRequired": "yes"
+                }
+            ],
+            "dom-class": "col-1-1"
+        },
+        "key-6": {
+            "column": "1",
+            "questions": [
+                {
+                    "title": "*How frequently should data be exchanged between applications?",
+                    "options": [
+                        {
+                            "name": "In real time (within seconds)",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Within minutes",
+                            "type": "checkbox",
+                            "include": ""
+                        },     
+                        {
+                            "name": "Periodically (daily/weekly/monthly)",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "On demand or in large batches",
+                            "type": "checkbox",
+                            "include": ""
+                        }
+                    ],
+                    "isRequired": "yes"
+                },
+                {
+                    "title": "*What is the primary integration approach you envision?",
+                    "options": [
+                        {
+                            "name": "Not sure, we need a recommendation",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "Common data storage",
+                            "type": "radio",
+                            "include": ""
+                        },     
+                        {
+                            "name": "Point-to-point integration",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "Middleware or integration platform",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "Robotic process automation",
+                            "type": "radio",
+                            "include": ""
+                        }
+                    ],
+                    "isRequired": "yes"
+                }
+            ],
+            "dom-class": "col-2-1"
+        },
+        "key-7": {
+            "column": "1",
+            "questions": [
+                {
+                    "title": "*Do you anticipate the need to customize the functionality of the to-be-integrated systems or apps?",
+                    "options": [
+                        {
+                            "name": "Yes, extensive customization to meet business needs",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Moderate customization of existing features",
+                            "type": "checkbox",
+                            "include": ""
+                        },     
+                        {
+                            "name": "Minimal or no customization required",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Not sure",
+                            "type": "checkbox",
+                            "include": ""
+                        }
+                    ],
+                    "isRequired": "yes"
+                },
+                {
+                    "title": "*How soon do you need the integration to be operational?",
+                    "options": [
+                        {
+                            "name": "Within 1–3 months",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "Within 4–6 months",
+                            "type": "radio",
+                            "include": ""
+                        },     
+                        {
+                            "name": "No immediate timeline, as long as the process is done well",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "Flexible, depending on recommendations",
+                            "type": "radio",
+                            "include": ""
+                        }
+                    ],
+                    "isRequired": "yes"
+                }
+            ],
+            "dom-class": "col-2-1"
+        },
+        "key-8": {
+            "column": "1",
+            "questions": [
+                {
+                    "title": "Please tick if you already have any of these for the integration initiative:",
+                    "options": [
+                        {
+                            "name": "A business case",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "A clickable prototype (e.g., for the integrated app or the integration software admin panel)",
+                            "type": "checkbox",
+                            "include": ""
+                        },     
+                        {
+                            "name": "An integration architecture",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "A proof of concept",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "A project roadmap",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "QA strategy and plan",
+                            "type": "checkbox",
+                            "include": ""
+                        }
+                    ],
+                    "isRequired": "no"
+                }
+            ],
+            "dom-class": "col-1-2"
+        }
+    }
+]

@@ -565,67 +565,6 @@
                 }
             ],
             "dom-class": "col-1-2"
-        },
-        "key-9": {
-            "column": "2",
-            "questions": [
-                {
-                    "title": "Here, you can add any details you want to share with us:",
-                    "options": [
-                        {
-                            "name": "",
-                            "type": "",
-                            "include": "textarea"
-                        }
-                    ],
-                    "isRequired": "no"
-                },
-                {
-                    "title": "*Full name",
-                    "options": [
-                        {
-                            "name": "",
-                            "type": "inputtext",
-                            "include": ""
-                        }
-                    ],
-                    "isRequired": "yes"
-                },
-                {
-                    "title": "*Company name",
-                    "options": [
-                        {
-                            "name": "",
-                            "type": "inputtext",
-                            "include": ""
-                        }
-                    ],
-                    "isRequired": "yes"
-                },
-                {
-                    "title": "*Work email",
-                    "options": [
-                        {
-                            "name": "",
-                            "type": "inputtext",
-                            "include": ""
-                        }
-                    ],
-                    "isRequired": "yes"
-                },
-                {
-                    "title": "Phone number",
-                    "options": [
-                        {
-                            "name": "",
-                            "type": "inputtext",
-                            "include": ""
-                        }
-                    ],
-                    "isRequired": "no"
-                }
-            ],
-            "dom-class": "col-1"
         }
     }
 ]

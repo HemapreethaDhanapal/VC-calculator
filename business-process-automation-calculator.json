@@ -52,7 +52,7 @@
                             "include": ""
                         },
                         {
-                            "name": "Oil & Gas",
+                            "name": "Oil and gas",
                             "type": "radio",
                             "include": ""
                         },
@@ -116,43 +116,157 @@
             "column": "1",
             "questions": [
                 {
-                    "title": "What is your current data volume?",
+                    "title": "*What business area(s) do you plan to automate?",
                     "options": [
                         {
-                            "name": "<1 TB",
-                            "type": "radio",
+                            "name": "Finance management",
+                            "type": "checkbox",
                             "include": ""
                         },
                         {
-                            "name": "1–4 TB",
-                            "type": "radio",
+                            "name": "Supply chain management",
+                            "type": "checkbox",
                             "include": ""
                         },
                         {
-                            "name": "4–32 TB",
-                            "type": "radio",
+                            "name": "Inventory management",
+                            "type": "checkbox",
                             "include": ""
                         },
                         {
-                            "name": "32–256 TB",
-                            "type": "radio",
+                            "name": "HR management",
+                            "type": "checkbox",
                             "include": ""
                         },
                         {
-                            "name": "256 TB –2 PB",
-                            "type": "radio",
+                            "name": "Document management",
+                            "type": "checkbox",
                             "include": ""
                         },
                         {
-                            "name": ">2 PB",
-                            "type": "radio",
+                            "name": "Sales",
+                            "type": "checkbox",
                             "include": ""
                         },
                         {
-                            "name": "Not sure",
-                            "type": "radio",
+                            "name": "Marketing",
+                            "type": "checkbox",
                             "include": ""
                         },
+                        {
+                            "name": "Customer (patient, student, etc.) service management",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Customer experience management",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Production or operations management",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Enterprise asset management",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Business intelligence",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "IT service management",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Project management",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Research and development",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Other",
+                            "type": "checkbox",
+                            "include": "textarea"
+                        }
+                    ],
+                    "isRequired": "yes"
+                }
+            ],
+            "dom-class": "col-1-2"
+        },
+        "key-3": {
+            "column": "1",
+            "questions": [
+                {
+                    "title": "If possible, please detail what exact processes or tasks have to be automated:",
+                    "options": [                       
+                        {
+                            "name": "",
+                            "type": "",
+                            "include": "textarea"
+                        }
+                    ],
+                    "isRequired": "no"
+                }
+            ],
+            "dom-class": "col-1-1"
+        },
+        "key-4": {
+            "column": "1",
+            "questions": [
+                {
+                    "title": "What problems are you planning to solve with automation?",
+                    "options": [
+                        {
+                            "name": "Manual data entry",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Repetitive manual routines",
+                            "type": "radio",
+                            "include": ""
+                        },    
+                        {
+                            "name": "Human errors",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "High operational costs",
+                            "type": "radio",
+                            "include": ""
+                        },                       
+                        {
+                            "name": "Lack of process consistency and standardization",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Low process flexibility and scalability",
+                            "type": "radio",
+                            "include": ""
+                        },  
+                        {
+                            "name": "Data silos",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Compliance-related risks",
+                            "type": "radio",
+                            "include": ""
+                        },    
                         {
                             "name": "Other",
                             "type": "radio",
@@ -162,30 +276,50 @@
                     "isRequired": "no"
                 },
                 {
-                    "title": "*What data volume growth do you expect during the next 12 months?",
+                    "title": "Approximately how many employees are involved in the target process(es)?",
                     "options": [
                         {
-                            "name": "<10%",
+                            "name": "1–20",
                             "type": "radio",
                             "include": ""
                         },
                         {
-                            "name": "10%-50%",
+                            "name": "20–50",
                             "type": "radio",
                             "include": ""
                         },
                         {
-                            "name": "50%-100%",
+                            "name": "50–100",
                             "type": "radio",
                             "include": ""
                         },
                         {
-                            "name": "100%-200%",
+                            "name": "100–200",
                             "type": "radio",
                             "include": ""
                         },
                         {
-                            "name": ">200%",
+                            "name": "200–500",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "500–1,000",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "1,000–5,000",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "5,000–10,000",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "10,000+",
                             "type": "radio",
                             "include": ""
                         },
@@ -193,11 +327,6 @@
                             "name": "Not sure",
                             "type": "radio",
                             "include": ""
-                        },
-                        {
-                            "name": "Other",
-                            "type": "radio",
-                            "include": "textarea"
                         }
                     ],
                     "isRequired": "yes"
@@ -205,195 +334,21 @@
             ],
             "dom-class": "col-2-1"
         },
-        "key-3": {
+        "key-5": {
             "column": "1",
             "questions": [
                 {
-                    "title": "*Please specify the data sources. (Select all that apply)",
-                    "options": [
+                    "title": "Are you already using any kind of software for the target process(es)?",
+                    "options": [                       
                         {
-                            "name": "ERP",
-                            "type": "checkbox",
+                            "name": "Yes",
+                            "type": "radio",
                             "include": ""
                         },
                         {
-                            "name": "CRM",
-                            "type": "checkbox",
+                            "name": "No",
+                            "type": "radio",
                             "include": ""
-                        },
-                        {
-                            "name": "SCM",
-                            "type": "checkbox",
-                            "include": ""
-                        },
-                        {
-                            "name": "EHR /EMR",
-                            "type": "checkbox",
-                            "include": ""
-                        },
-                        {
-                            "name": "RCM",
-                            "type": "checkbox",
-                            "include": ""
-                        },
-                        {
-                            "name": "LIS/LIMS",
-                            "type": "checkbox",
-                            "include": ""
-                        },
-                        {
-                            "name": "Practice management system",
-                            "type": "checkbox",
-                            "include": ""
-                        },
-                        {
-                            "name": "RPM",
-                            "type": "checkbox",
-                            "include": ""
-                        },
-                        {
-                            "name": "Ecommerce platform",
-                            "type": "checkbox",
-                            "include": ""
-                        },
-                        {
-                            "name": "Inventory management system",
-                            "type": "checkbox",
-                            "include": ""
-                        },
-                        {
-                            "name": "Financial and accounting software",
-                            "type": "checkbox",
-                            "include": ""
-                        },
-                        {
-                            "name": "HR software",
-                            "type": "checkbox",
-                            "include": ""
-                        },
-                        {
-                            "name": "IoT devices and sensors",
-                            "type": "checkbox",
-                            "include": ""
-                        },
-                        {
-                            "name": "External sources (e.g., weather data, competitor prices, market data, social media)",
-                            "type": "checkbox",
-                            "include": ""
-                        },
-                        {
-                            "name": "Other",
-                            "type": "checkbox",
-                            "include": "textarea"
-                        }
-                    ],
-                    "isRequired": "yes"
-                }
-            ],
-            "dom-class": "col-1-2"
-        },
-        "key-4": {
-            "column": "2",
-            "questions": [
-                {
-                    "title": "*What types of storage currently house your data?",
-                    "options": [
-                        {
-                            "name": "Central data warehouse",
-                            "type": "checkbox",
-                            "include": ""
-                        },
-                        {
-                            "name": "Application databases (e.g., MySQL, PostgreSQL)",
-                            "type": "checkbox",
-                            "include": ""
-                        },
-                        {
-                            "name": "Big data databases (e.g., Hadoop, Spark)",
-                            "type": "checkbox",
-                            "include": ""
-                        },
-                        {
-                            "name": "Cloud storage (e.g., AWS S3, Azure Blob)",
-                            "type": "checkbox",
-                            "include": ""
-                        },
-                        {
-                            "name": "Other big data storage (e.g., HDFS)",
-                            "type": "checkbox",
-                            "include": ""
-                        },
-                        {
-                            "name": "Backups",
-                            "type": "checkbox",
-                            "include": ""
-                        },
-                        {
-                            "name": "On-premise servers",
-                            "type": "checkbox",
-                            "include": ""
-                        },
-                        {
-                            "name": "Data lakes (e.g., raw data storage)",
-                            "type": "checkbox",
-                            "include": ""
-                        },
-                        {
-                            "name": "NoSQL databases (e.g., MongoDB, Cassandra)",
-                            "type": "checkbox",
-                            "include": ""
-                        },
-                        {
-                            "name": "Other",
-                            "type": "checkbox",
-                            "include": "textarea"
-                        }
-                    ],
-                    "isRequired": "yes"
-                }
-            ],
-            "dom-class": "col-1-2"
-        },
-        "key-5": {
-            "column": "2",
-            "questions": [
-                {
-                    "title": "*Do you encounter any of the data quality issues below? Check all that apply.",
-                    "options": [
-                        {
-                            "name": "Errors in data (e.g., incorrect numeric entries, outliers)",
-                            "type": "checkbox",
-                            "include": ""
-                        },
-                        {
-                            "name": "Missing fields (e.g., demographics data in customer profiles, SKU data in inventory datasets)",
-                            "type": "checkbox",
-                            "include": ""
-                        },
-                        {
-                            "name": "Multiple versions of the same data (e.g., units of measurement, currencies, date formats)",
-                            "type": "checkbox",
-                            "include": ""
-                        },
-                        {
-                            "name": "Untimely data updates",
-                            "type": "checkbox",
-                            "include": ""
-                        },
-                        {
-                            "name": "Data is irrelevant to the current business needs",
-                            "type": "checkbox",
-                            "include": ""
-                        },
-                        {
-                            "name": "None",
-                            "type": "checkbox",
-                            "include": ""
-                        },
-                        {
-                            "name": "Other",
-                            "type": "checkbox",
-                            "include": "textarea"
                         }
                     ],
                     "isRequired": "yes"
@@ -405,7 +360,54 @@
             "column": "2",
             "questions": [
                 {
-                    "title": "*Are there any compliance requirements for your solution? Check all that apply.",
+                    "title": "*Will you need to establish integrations between systems?",
+                    "options": [
+                        {
+                            "name": "No",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "Not sure",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "Yes",
+                            "type": "radio",
+                            "include": "textarea"
+                        }
+                    ],
+                    "isRequired": "yes"
+                },
+                {
+                    "title": "*Do you have any preferences for the environment?",
+                    "options": [
+                        {
+                            "name": "On-premises",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "Cloud",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "Hybrid (cloud and on-premises)",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "Not sure",
+                            "type": "radio",
+                            "include": ""
+                        }
+                    ],
+                    "isRequired": "yes"
+                },
+                {
+                    "title": "*Which compliance requirements or standards will the software need to follow?",
                     "options": [
                         {
                             "name": "None",
@@ -418,12 +420,12 @@
                             "include": ""
                         },
                         {
-                            "name": "PCI DSS",
+                            "name": "GDPR",
                             "type": "checkbox",
                             "include": ""
                         },
                         {
-                            "name": "GLBA",
+                            "name": "PCI DSS",
                             "type": "checkbox",
                             "include": ""
                         },
@@ -433,27 +435,22 @@
                             "include": ""
                         },
                         {
-                            "name": "GDPR",
+                            "name": "GLBA",
                             "type": "checkbox",
                             "include": ""
                         },
                         {
-                            "name": "SOC1/SOC2",
+                            "name": "SAMA",
                             "type": "checkbox",
                             "include": ""
                         },
                         {
-                            "name": "SFDA (for the KSA)",
+                            "name": "SOX",
                             "type": "checkbox",
                             "include": ""
                         },
                         {
-                            "name": "ESMA (for the UAE)",
-                            "type": "checkbox",
-                            "include": ""
-                        },
-                        {
-                            "name": "PDPL (for the UAE)",
+                            "name": "We need your consultation on compliance",
                             "type": "checkbox",
                             "include": ""
                         },
@@ -466,7 +463,40 @@
                     "isRequired": "yes"
                 }
             ],
-            "dom-class": "col-1-2"
+            "dom-class": "col-2-1-2"
+        },
+        "key-7": {
+            "column": "1",
+            "questions": [
+                {
+                    "title": "*Do you have tech stack preferences?",
+                    "options": [
+                        {
+                            "name": "No",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "Yes",
+                            "type": "radio",
+                            "include": ""
+                        }
+                    ],
+                    "isRequired": "yes"
+                },
+                {
+                    "title": "Here, you can add any details about the target process(es), your business goals, and the assistance you are looking for:",
+                    "options": [
+                        {
+                            "name": "",
+                            "type": "",
+                            "include": "textarea"
+                        }
+                    ],
+                    "isRequired": "no"
+                }
+            ],
+            "dom-class": "col-2-1"
         }
     }
 ]

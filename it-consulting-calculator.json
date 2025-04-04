@@ -1,0 +1,341 @@
+[
+    {
+        "key-1": {
+            "column": "1",
+            "questions": [
+                {
+                    "title": "*What is your industry?",
+                    "options": [
+                        {
+                            "name": "Healthcare",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Financial services, banking, and insurance",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Retail & wholesale",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Manufacturing",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "IT",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Transportation & logistics",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Telecommunications",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Public sector",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Entertainment",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Education",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Professional services",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Oil and gas",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Real estate",
+                            "type": "checkbox",
+                            "include": ""
+                        },                        
+                        {
+                            "name": "Other",
+                            "type": "checkbox",
+                            "include": "textarea"
+                        }
+                    ],
+                    "isRequired": "yes"
+                }
+            ],
+            "dom-class": "col-1-2"
+        },
+        "key-2": {
+            "column": "1",
+            "questions": [
+                {
+                    "title": "*What is the size of your company?",
+                    "options": [
+                        {
+                            "name": "Fewer than 50 employees",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "50–200 employees",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "200–500 employees",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "500–1,000 employees",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "1,000–5,000 employees",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "5,000–10,000 employees",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "More than 10,000 employees",
+                            "type": "radio",
+                            "include": ""
+                        }
+                    ],
+                    "isRequired": "yes"
+                }
+            ],
+            "dom-class": "col-1-2"
+        },
+        "key-3": {
+            "column": "1",
+            "questions": [
+                {
+                    "title": "*What process(es) do you need consulting for?",
+                    "options": [
+                        {
+                            "name": "Digital transformation",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Software development",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Software modernization",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Software migration",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Software audit/troubleshooting/support",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Tech stack selection/assessment",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Cloud enablement/optimization",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "IT infrastructure management/support",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "ITSM",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Setup of SDLC processes (e.g., DevOps, CI/CD, QA)",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Remote work consulting and enablement",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Cybersecurity management",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Other",
+                            "type": "checkbox",
+                            "include": "textarea"
+                        }
+                    ],
+                    "isRequired": "yes"
+                }
+            ],
+            "dom-class": "col-1-2"
+        },
+        "key-4": {
+            "column": "2",
+            "questions": [
+                {
+                    "title": "*What is your preferred timeline?",
+                    "options": [
+                        {
+                            "name": "1–3 months",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "3–6 months",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "6–12 months",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "Flexible/Long-term",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "I'm not sure",
+                            "type": "radio",
+                            "include": ""
+                        }
+                    ],
+                    "isRequired": "yes"
+                }
+            ],
+            "dom-class": "col-1-1"
+        },
+        "key-5": {
+            "column": "2",
+            "questions": [
+                {
+                    "title": "*Do you need our expertise in particular technologies (e.g., programming techs, platforms, clouds)?",
+                    "options": [
+                        {
+                            "name": "No",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "Yes",
+                            "type": "radio",
+                            "include": "textarea"
+                        }
+                    ],
+                    "isRequired": "yes"
+                },
+                {
+                    "title": "Here, you can describe briefly the purpose of consulting (e.g., what help you need, what problems you want to solve):",
+                    "options": [
+                        {
+                            "name": "",
+                            "type": "",
+                            "include": "textarea"
+                        }
+                    ],
+                    "isRequired": "no"
+                }
+            ],
+            "dom-class": "col-1-1"
+        },
+        "key-6": {
+            "column": "2",
+            "questions": [
+                {
+                    "title": "Here, you can add any details you want to share with us:",
+                    "options": [
+                        {
+                            "name": "",
+                            "type": "",
+                            "include": "textarea"
+                        }
+                    ],
+                    "isRequired": "no"
+                },
+                {
+                    "title": "*Full name",
+                    "options": [
+                        {
+                            "name": "",
+                            "type": "inputtext",
+                            "include": ""
+                        }
+                    ],
+                    "isRequired": "yes"
+                },
+                {
+                    "title": "*Company name",
+                    "options": [
+                        {
+                            "name": "",
+                            "type": "inputtext",
+                            "include": ""
+                        }
+                    ],
+                    "isRequired": "yes"
+                },
+                {
+                    "title": "*Work email",
+                    "options": [
+                        {
+                            "name": "",
+                            "type": "inputtext",
+                            "include": ""
+                        }
+                    ],
+                    "isRequired": "yes"
+                },
+                {
+                    "title": "Phone number",
+                    "options": [
+                        {
+                            "name": "",
+                            "type": "inputtext",
+                            "include": ""
+                        }
+                    ],
+                    "isRequired": "no"
+                }
+            ],
+            "dom-class": "col-1"
+        }
+    }
+]

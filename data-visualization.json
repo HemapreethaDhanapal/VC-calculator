@@ -1,0 +1,268 @@
+[
+    {
+        "key-1": {
+            "column": "1",
+            "questions": [
+                {
+                    "title": "*What is your industry?",
+                    "options": [
+                        {
+                            "name": "Healthcare",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "Banking",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "Insurance",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "Lending",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "Investment",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "Payments",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "Manufacturing",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "Transportation",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "Retail and wholesale",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "Oil and gas",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "Professional services",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "Telecommunications",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "Engineering & Construction",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "Utilities",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "Public sector",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "Real estate",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "Entertainment",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "Information technologies",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "Multi-industry",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "Other",
+                            "type": "radio",
+                            "include": "textarea"
+                        }
+                    ],
+                    "isRequired": "yes"
+                }
+            ],
+            "dom-class": "col-1-2"
+        },
+        "key-2": {
+            "column": "1",
+            "questions": [
+                {
+                    "title": "*What describes your situation best?",
+                    "options": [
+                        {
+                            "name": "We need to integrate, structure, and visualize our data from scratch",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "We already have structured data and want to visualize it via reports and dashboards",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "We need to upgrade our existing data visualization solution",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "Other",
+                            "type": "radio",
+                            "include": "textarea"
+                        }
+                    ],
+                    "isRequired": "yes"
+                }
+            ],
+            "dom-class": "col-1-1"
+        },
+        "key-3": {
+            "column": "1",
+            "questions": [
+                {
+                    "title": "*What is the approximate number of users for your data visualization solution?",
+                    "options": [
+                        {
+                            "name": "<10",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "10–50",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "50–100",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "100–500",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "500–1000",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": ">1000",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "Not sure",
+                            "type": "radio",
+                            "include": ""
+                        }
+                    ],
+                    "isRequired": "yes"
+                },
+                {
+                    "title": "*Do you have any tech stack preferences, incl. cloud platforms?",
+                    "options": [
+                        {
+                            "name": "No",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "Yes",
+                            "type": "radio",
+                            "include": "textarea"
+                        }
+                    ],
+                    "isRequired": "yes"
+                }
+            ],
+            "dom-class": "col-1-1"
+        },
+        "key-4": {
+            "column": "1",
+            "questions": [
+                {
+                    "title": "*Should your data processing and visualization processes be compliant with any regulations or standards?",
+                    "options": [
+                        {
+                            "name": "None",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "HIPAA",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "PCI DSS",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "GLBA",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "AML/KYC",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "GDPR",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "SOC1/SOC2",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "We will require your expert advice on compliance",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Other",
+                            "type": "checkbox",
+                            "include": "textarea"
+                        }
+                    ],
+                    "isRequired": "yes"
+                }
+            ],
+            "dom-class": "col-1-1"
+        }
+    }
+]

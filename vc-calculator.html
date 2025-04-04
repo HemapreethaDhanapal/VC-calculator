@@ -27,7 +27,7 @@
         .col-1-2 .dom-class-column{column-count: 2;}
         .col-2-1 .question-container{width: 50%;float: left;}
         .radio-textarea-row,.checkbox-textarea-row {display: flex;align-items: center;}
-        .radio-textarea-row textarea ,.checkbox-textarea-row textarea {margin-left: 5px; width: 100%;flex: 1; height: 35px;resize: none;}
+        .radio-textarea-row textarea ,.checkbox-textarea-row textarea {margin-left: 5px; margin-top: 0;width: 100%;flex: 1; height: 35px;resize: none;}
         *{box-sizing: border-box;}
         input[type="radio"],input[type="checkbox"] { margin: 0 5px 0 0;}
         .textarea-row{width:100%;}
@@ -35,22 +35,43 @@
         .col-2-1-1 .dom-class-column{column-count: 2;}
         .col-2-1-1 .question-container:nth-child(2) .dom-class-column{column-count: 1;}
         .col-2-1-1 .question-container:nth-child(2) .dom-class-column .textarea-row textarea{width: 100%;flex: 1; height: 80px;resize: none;}
-    .col-1-2-1 .dom-class-column:nth-child(1){column-count: 1;}
+        .col-1-2-1 .dom-class-column:nth-child(1){column-count: 1;}
         .col-1-2-1 .question-container:nth-child(2) .dom-class-column{column-count: 2;}
         .col-1-2-1 .question-container:nth-child(1) .dom-class-column .textarea-row textarea{width: 100%;flex: 1; height: 80px;resize: none;}
         .col-2-1-2 {column-count: 2;}
+        .col-2-1.active {float: left;}
         </style>
 </head>
 <body>
     <div class="container">
         <h2>Cost Calculator</h2>
-        <div class="steps-navigation" id="stepsNav"></div>
-        <form id="calculatorForm"></form>
-        <div class="button-group">
-            <button type="button" id="prevBtn" onclick="changeStep(-1)" class="hidden">Back</button>
-            <button type="button" id="nextBtn" onclick="changeStep(1)">Next</button>
-            <button type="submit" id="submitBtn" class="hidden">Finish</button>
-        </div>
+        <form>            
+            <div class="steps-navigation" id="stepsNav"></div>      
+            <div  id="calculatorForm"></div>
+            <div class="step last-step" id="stepFinal">
+                <h3>Your Contact Data</h3>                
+                <label>Full Name:
+                    <input type="text" id="fullName" required>
+                    <span class="error-msg" id="fullNameError">Please fill in the required fields.</span>
+                </label>                
+                <label>Company Name:
+                    <input type="text" id="companyName" required>
+                    <span class="error-msg" id="companyNameError">Please fill in the required fields.</span>
+                </label>                
+                <label>Work Email:
+                    <input type="email" id="workEmail" required>
+                    <span class="error-msg" id="workEmailError">Please fill in the required fields.</span>
+                </label>                
+                <label>Phone Number:
+                    <input type="text" id="phoneNumber">
+                </label>
+            </div>
+            <div class="button-group">
+                <button type="button" id="prevBtn" onclick="changeStep(-1)" class="hidden">Back</button>
+                <button type="button" id="nextBtn" onclick="changeStep(1)">Next</button>
+                <button type="submit" id="submitBtn" class="hidden">Finish</button>
+            </div>
+        </form>
     </div>
 
     <script>
@@ -142,7 +163,11 @@
                 formContainer.appendChild(stepDiv);
                 stepIndex++;
             });
-
+            const lastStep = document.querySelector(".last-step");
+            lastStep.id = `step${stepIndex}`;
+            lastStep.classList.add("step");
+            if (stepIndex === 1) lastStep.classList.add("active");
+            formContainer.appendChild(lastStep);
             updateNavigation();
         }
 
@@ -211,6 +236,50 @@
                     isValid = false;
                 }
             });
+
+            if (stepElement.classList.contains("last-step")) {
+                const fullName = document.getElementById("fullName");
+                const companyName = document.getElementById("companyName");
+                const workEmail = document.getElementById("workEmail");
+
+                const fullNameError = document.getElementById("fullNameError");
+                const companyNameError = document.getElementById("companyNameError");
+                const workEmailError = document.getElementById("workEmailError");
+
+                let contactValid = true;
+
+                if (!fullName.value.trim()) {
+                    fullNameError.style.opacity = "1";
+                    contactValid = false;
+                } else {
+                    fullNameError.style.opacity = "0";
+                }
+
+                if (!companyName.value.trim()) {
+                    companyNameError.style.opacity = "1";
+                    contactValid = false;
+                } else {
+                    companyNameError.style.opacity = "0";
+                }
+
+                if (!workEmail.value.trim()) {
+                    workEmailError.style.opacity = "1";
+                    contactValid = false;
+                } else {
+                    workEmailError.style.opacity = "0";
+                }
+
+                if (!contactValid) {
+                    isValid = false;
+                }
+
+                [fullName, companyName, workEmail].forEach((input, index) => {
+                    input.addEventListener("input", () => {
+                        const errors = [fullNameError, companyNameError, workEmailError];
+                        errors[index].style.opacity = "0";
+                    });
+                });
+            }
 
             return isValid;
         }
