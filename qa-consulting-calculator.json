@@ -1,0 +1,336 @@
+[
+    {
+        "key-1": {
+            "column": "1",
+            "questions": [
+                {
+                    "title": "*What assistance do you need?",
+                    "options": [
+                        {
+                            "name": "Existing QA process audit and improvement",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "QA process setup from scratch",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Pre-certification QA aid (establishing software or QA process compliance)",
+                            "type": "checkbox",
+                            "include": ""
+                        },  
+                        {
+                            "name": "Test automation implementation or improvement",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Not sure",
+                            "type": "checkbox",
+                            "include": ""
+                        },                             
+                        {
+                            "name": "Other",
+                            "type": "checkbox",
+                            "include": "textarea"
+                        }
+                    ],
+                    "isRequired": "yes"
+                }
+            ],
+            "dom-class": "col-1-1"
+        },
+        "key-2": {
+            "column": "1",
+            "questions": [
+                {
+                    "title": "*What are the primary goals you're looking to achieve?",
+                    "options": [
+                        {
+                            "name": "Improve test documentation quality and consistency",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Reduce the number of bugs",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Reduce QA costs",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Achieve compliance",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Speed up release cycles",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Improve synchronization between development and testing teams",
+                            "type": "checkbox",
+                            "include": ""
+                        },                        
+                        {
+                            "name": "Other",
+                            "type": "checkbox",
+                            "include": "textarea"
+                        }
+                    ],
+                    "isRequired": "yes"
+                }
+            ],
+            "dom-class": "col-1-1"
+        },
+        "key-3": {
+            "column": "1",
+            "questions": [
+                {
+                    "title": "*What industry does your company operate in?",
+                    "options": [
+                        {
+                            "name": "BFSI",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Healthcare",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Manufacturing",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "IT",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Retail and wholesale",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Transportation",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Oil and gas",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Telecommunications",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Public sector",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Other",
+                            "type": "checkbox",
+                            "include": ""
+                        }
+                    ],
+                    "isRequired": "yes"
+                }
+            ],
+            "dom-class": "col-1-2"
+        },
+        "key-4": {
+            "column": "1",
+            "questions": [
+                {
+                    "title": "*What software types do you need QA for?",
+                    "options": [
+                        {
+                            "name": "Web app",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Desktop app",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Mobile iOS app",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Mobile Android app",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Mobile cross-platform app",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Data warehouse / Database",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "API",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Other",
+                            "type": "checkbox",
+                            "include": "textarea"
+                        }
+                    ],
+                    "isRequired": "yes"
+                },
+                {
+                    "title": "*What is the state of your software?",
+                    "options": [
+                        {
+                            "name": "Starting the development soon",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "MVP, software under development",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "Software is fully launched",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "Legacy app, lack of up-to-date documentation",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "Other",
+                            "type": "radio",
+                            "include": "textarea"
+                        }
+                    ],
+                    "isRequired": "yes"
+                },
+                {
+                    "title": "Is the app integrated or expected to be integrated with other systems?",
+                    "options": [
+                        {
+                            "name": "No",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "Not sure",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "Yes",
+                            "type": "radio",
+                            "include": "textarea"
+                        }
+                    ],
+                    "isRequired": "no"
+                }
+            ],
+            "dom-class": "col-2-1"
+        },
+        "key-5": {
+            "column": "1",
+            "questions": [
+                {
+                    "title": "*What compliance requirements are relevant to your case? Tick all that apply.",
+                    "options": [
+                        {
+                            "name": "None",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "HIPAA",
+                            "type": "checkbox",
+                            "include": ""
+                        },  
+                        {
+                            "name": "PCI DSS",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "GDPR",
+                            "type": "checkbox",
+                            "include": ""
+                        }, 
+                        {
+                            "name": "AML/KYC",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "GLBA",
+                            "type": "checkbox",
+                            "include": ""
+                        }, 
+                        {
+                            "name": "NIST",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "SOC 2",
+                            "type": "checkbox",
+                            "include": ""
+                        },  
+                        {
+                            "name": "ISO 9001",
+                            "type": "checkbox",
+                            "include": ""
+                        }, 
+                        {
+                            "name": "ISO 27001",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "ISO 13485",
+                            "type": "checkbox",
+                            "include": ""
+                        },    
+                        {
+                            "name": "I need your advice on compliance",
+                            "type": "checkbox",
+                            "include": ""
+                        },                 
+                        {
+                            "name": "Other",
+                            "type": "checkbox",
+                            "include": "textarea"
+                        }
+                    ],
+                    "isRequired": "yes"
+                }
+            ],
+            "dom-class": "col-1-2"
+        }
+    }
+]

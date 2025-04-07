@@ -1,0 +1,253 @@
+[
+    {
+        "key-1": {
+            "column": "1",
+            "questions": [
+                {
+                    "title": "*What is your industry?",
+                    "options": [
+                        {
+                            "name": "Healthcare",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "Banking, Financial Services, and Insurance",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "Manufacturing",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "Transportation",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "Retail and wholesale",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "Oil and gas",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "Professional services",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "Telecommunications",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "Construction",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "Utilities",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "Public sector",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "Information technologies",
+                            "type": "radio",
+                            "include": ""
+                        },                       
+                        {
+                            "name": "Other",
+                            "type": "radio",
+                            "include": "textarea"
+                        }
+                    ],
+                    "isRequired": "yes"
+                }
+            ],
+            "dom-class": "col-1-2"
+        },
+        "key-2": {
+            "column": "1",
+            "questions": [
+                {
+                    "title": "*What is the size of your company?",
+                    "options": [
+                        {
+                            "name": "1-10 employees",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "11-50 employees",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "51-200 employees",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "201-500 employees",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "501-1,000 employees",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "1,001-5,000 employees",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "5,001-10,000 employees",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "10,000+ employees",
+                            "type": "radio",
+                            "include": ""
+                        }
+                    ],
+                    "isRequired": "yes"
+                }
+            ],
+            "dom-class": "col-1-2"
+        },
+        "key-3": {
+            "column": "1",
+            "questions": [
+                {
+                    "title": "*What SIEM services you are interested in?",
+                    "options": [
+                        {
+                            "name": "Health check & optimization",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Design & deployment",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Customization & development",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Fine-tuning & delivery",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Support & maintenance/L3",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Training: fundamentals, advanced",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "SIEM-based SOC/SOAR services",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "QLEAN app suite",
+                            "type": "checkbox",
+                            "include": ""
+                        },                        
+                        {
+                            "name": "Other",
+                            "type": "checkbox",
+                            "include": "textarea"
+                        }
+                    ],
+                    "isRequired": "yes"
+                }
+            ],
+            "dom-class": "col-1-2"
+        },
+        "key-4": {
+            "column": "2",
+            "questions": [
+                {
+                    "title": "What work model do you prefer?",
+                    "options": [
+                        {
+                            "name": "Onsite",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "Remote",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "Hybrid",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "Not sure",
+                            "type": "radio",
+                            "include": ""
+                        }
+                    ],
+                    "isRequired": "no"
+                },
+                {
+                    "title": "Where are you located?",
+                    "options": [
+                        {
+                            "name": "APAC & Japan",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "EMEA",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "North America",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "South America",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "Other",
+                            "type": "radio",
+                            "include": "textarea"
+                        }
+                    ],
+                    "isRequired": "no"
+                }
+            ],
+            "dom-class": "col-2-1"
+        }
+    }
+]

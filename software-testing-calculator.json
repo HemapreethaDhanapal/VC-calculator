@@ -1,0 +1,303 @@
+[
+    {
+        "key-1": {
+            "column": "1",
+            "questions": [
+                {
+                    "title": "*What do you need to test? (Select all that apply)",
+                    "options": [
+                        {
+                            "name": "Mobile iOS app",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Mobile Android app",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Mobile cross-platform app",
+                            "type": "checkbox",
+                            "include": ""
+                        },  
+                        {
+                            "name": "Web app",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Desktop app",
+                            "type": "checkbox",
+                            "include": ""
+                        },   
+                        {
+                            "name": "Data warehouse / Database",
+                            "type": "checkbox",
+                            "include": ""
+                        },  
+                        {
+                            "name": "API",
+                            "type": "checkbox",
+                            "include": ""
+                        },                           
+                        {
+                            "name": "Other",
+                            "type": "checkbox",
+                            "include": "textarea"
+                        }
+                    ],
+                    "isRequired": "yes"
+                },
+                {
+                    "title": "*What is the current stage of your software?",
+                    "options": [
+                        {
+                            "name": "We’re about to start development",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "MVP or prototype is currently under development",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "The software is fully launched and in use",
+                            "type": "radio",
+                            "include": ""
+                        }
+                    ],
+                    "isRequired": "yes"
+                }
+            ],
+            "dom-class": "col-2-1"
+        },
+        "key-2": {
+            "column": "1",
+            "questions": [
+                {
+                    "title": "*Which statement describes your testing needs best?",
+                    "options": [
+                        {
+                            "name": "I need one-time testing (e.g., before a major release or after an update).",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "I need continuous testing during development.",
+                            "type": "radio",
+                            "include": ""
+                        }
+                    ],
+                    "isRequired": "yes"
+                },
+                {
+                    "title": "*What is your preferred testing method?",
+                    "options": [
+                        {
+                            "name": "Automated testing",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "Manual testing Both",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "Both",
+                            "type": "radio",
+                            "include": ""
+                        }
+                    ],
+                    "isRequired": "yes"
+                }
+            ],
+            "dom-class": "col-1-1"
+        },
+        "key-3": {
+            "column": "1",
+            "questions": [
+                {
+                    "title": "*What is the primary goal of testing? (Select all that apply)",
+                    "options": [
+                        {
+                            "name": "Functional testing",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Performance testing",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Usability testing",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Localization testing",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Compatibility testing",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Accessibility testing",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Security/penetration testing",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Compliance testing",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Integration testing",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Regression testing",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Other",
+                            "type": "checkbox",
+                            "include": ""
+                        }
+                    ],
+                    "isRequired": "yes"
+                }
+            ],
+            "dom-class": "col-1-2"
+        },
+        "key-4": {
+            "column": "1",
+            "questions": [
+                {
+                    "title": "*What type of testing environment do you need?",
+                    "options": [
+                        {
+                            "name": "Local/On-premise",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "Cloud-based",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "Hybrid (cloud and on-premise)",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "Other",
+                            "type": "radio",
+                            "include": "textarea"
+                        }
+                    ],
+                    "isRequired": "yes"
+                },
+                {
+                    "title": "*Will your software need to connect with other apps or tools? ",
+                    "options": [
+                        {
+                            "name": "No",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "Not sure",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "Yes",
+                            "type": "radio",
+                            "include": "textarea"
+                        }
+                    ],
+                    "isRequired": "yes"
+                }
+            ],
+            "dom-class": "col-1-1"
+        },
+        "key-5": {
+            "column": "1",
+            "questions": [
+                {
+                    "title": "*Does your solution comprise any advanced techs?",
+                    "options": [
+                        {
+                            "name": "No, it doesn’t have advanced techs.",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "Internet of Things",
+                            "type": "radio",
+                            "include": ""
+                        },  
+                        {
+                            "name": "Big data",
+                            "type": "radio",
+                            "include": ""
+                        },   
+                        {
+                            "name": "Blockchain",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "AI/ML",
+                            "type": "radio",
+                            "include": ""
+                        },  
+                        {
+                            "name": "AR/VR",
+                            "type": "radio",
+                            "include": ""
+                        },                               
+                        {
+                            "name": "Other",
+                            "type": "radio",
+                            "include": "textarea"
+                        }
+                    ],
+                    "isRequired": "yes"
+                },
+                {
+                    "title": "Do you have preferences in testing tools?",
+                    "options": [
+                        {
+                            "name": "No",
+                            "type": "radio",
+                            "include": ""
+                        },                            
+                        {
+                            "name": "Yes",
+                            "type": "radio",
+                            "include": "textarea"
+                        }
+                    ],
+                    "isRequired": "yes"
+                }
+            ],
+            "dom-class": "col-2-1"
+        }
+    }
+]
