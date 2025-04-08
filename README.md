@@ -55,5 +55,13 @@ URL: https://www.scnsoft.com/security/siem/calculator
 File: siem-implementation.json
 
 
+Managed IT Service Cost Calculators
+=====================================
+Help desk services
+URL: https://www.scnsoft.com/it-operations/help-desk/pricing/calculator
+File: help-desk-pricing-calculator.json
+
+
+
 
 

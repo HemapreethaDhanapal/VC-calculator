@@ -1,0 +1,184 @@
+[
+    {
+        "key-1": {
+            "column": "1",
+            "questions": [
+                {
+                    "title": "*What type of company do you represent?",
+                    "options": [
+                        {
+                            "name": "An enterprise providing technical support to its employees",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "A software product company providing support to its users",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "An MSP looking for an outsourced team to provide white-label support to its clients",
+                            "type": "radio",
+                            "include": ""
+                        },              
+                        {
+                            "name": "Other",
+                            "type": "radio",
+                            "include": "textarea"
+                        }
+                    ],
+                    "isRequired": "yes"
+                }
+            ],
+            "dom-class": "col-1-1"
+        },
+        "key-2": {
+            "column": "1",
+            "questions": [
+                {
+                    "title": "*Select support level(s) you need:",
+                    "options": [
+                        {
+                            "name": "L1 (solving basic user-side issues, escalating unsolved issues to L2)",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "L2 (handling complex technical issues and basic infrastructure-related issues and requests)",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "L3 (handling complex infrastructure issues and requests and resolving app issues via code modifications)",
+                            "type": "checkbox",
+                            "include": ""
+                        }
+                    ],
+                    "isRequired": "yes"
+                }
+            ],
+            "dom-class": "col-1-1"
+        },
+        "key-3": {
+            "column": "1",
+            "questions": [
+                {
+                    "title": "*Select the needed time coverage:",
+                    "options": [
+                        {
+                            "name": "24/7",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "24/5",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "12/7",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "12/5",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "8/7",
+                            "type": "radio",
+                            "include": ""
+                        },
+                        {
+                            "name": "8/5",
+                            "type": "radio",
+                            "include": ""
+                        },                        
+                        {
+                            "name": "Other",
+                            "type": "radio",
+                            "include": "textarea"
+                        }
+                    ],
+                    "isRequired": "yes"
+                }
+            ],
+            "dom-class": "col-1-1"
+        },
+        "key-4": {
+            "column": "1",
+            "questions": [
+                {
+                    "title": "*What is the expected number of tickets per month?",
+                    "options": [
+                        {
+                            "name": " ",
+                            "type": "radio",
+                            "include": "textarea"
+                        },
+                        {
+                            "name": "Not sure",
+                            "type": "radio",
+                            "include": ""
+                        }
+                    ],
+                    "isRequired": "yes"
+                }
+            ],
+            "dom-class": "col-1-1"
+        },
+        "key-5": {
+            "column": "1",
+            "questions": [
+                {
+                    "title": "*Which languages should your support agents speak?",
+                    "options": [
+                        {
+                            "name": "English",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Spanish",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "German",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "French",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Polish",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Czech",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Turkish",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Other",
+                            "type": "checkbox",
+                            "include": "textarea"
+                        }
+                    ],
+                    "isRequired": "yes"
+                }
+            ],
+            "dom-class": "col-1-2"
+        }
+    }
+]

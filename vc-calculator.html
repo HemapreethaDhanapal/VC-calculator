@@ -121,13 +121,31 @@
                         } else if (option.type === "checkbox" && option.include === "textarea") {
                             label.innerHTML = `
                             <div class="checkbox-textarea-row">
-                                <input type="checkbox" name="${inputName}" value="Other"> 
-                                <textarea class="input-textarea" name="${inputName}_other" placeholder="${option.name} (Please specify)"></textarea>
+                                <input type="checkbox" name="${inputName}" value="Other" id="${inputName}_other_checkbox"> 
+                                <textarea class="input-textarea" name="${inputName}_other" placeholder="${option.name} (Please specify)"
+                                onfocus="document.getElementById('${inputName}_other_checkbox').checked = true"></textarea>
                             </div>`;
-                        } else if (option.type === "radio" && option.include === "textarea") { 
-                            label.innerHTML = `<div class="radio-textarea-row">
-                                <input type="radio" name="${inputName}" value="Other"> 
-                                <textarea class="input-textarea" name="${inputName}_other" placeholder="${option.name} (Please specify)"></textarea><div>
+                        } else if (option.type === "radio" && option.include === "textarea") {
+                            const isNameEmpty = option.name.trim() === "";
+                            const placeholder = isNameEmpty
+                                ? "Please specify"
+                                : `${option.name} (Please specify)`;
+                            label.innerHTML = `
+                                <div class="radio-textarea-row">
+                                    <input 
+                                        type="radio" 
+                                        name="${inputName}" 
+                                        value="Other" 
+                                        id="${inputName}_other_radio"
+                                    >
+                                    <textarea 
+                                        class="input-textarea" 
+                                        name="${inputName}_other" 
+                                        id="${inputName}_other_textarea" 
+                                        placeholder="${placeholder}" 
+                                        onfocus="document.getElementById('${inputName}_other_radio').checked = true"
+                                    ></textarea>
+                                </div>
                             `;
                         } else if (option.type === "checkbox") {
                             label.innerHTML = `
