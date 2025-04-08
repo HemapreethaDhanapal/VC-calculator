@@ -1,0 +1,173 @@
+[
+    {
+        "key-1": {
+            "column": "1",
+            "questions": [
+                {
+                    "title": "",
+                    "options": [
+                        {
+                            "name": "Developers",
+                            "type": "checkbox",
+                            "include": "",
+                            "categories": [
+                                {
+                                    "categories-title":"Technology",
+                                    "sub-categories":[
+                                        {
+                                            "sub-categories-title":"Backend"
+                                        },
+                                        {
+                                            "sub-categories-title":"Frontend"
+                                        },
+                                        {
+                                            "sub-categories-title":"Full stack"
+                                        },
+                                        {
+                                            "sub-categories-title":".NET"
+                                        },
+                                        {
+                                            "sub-categories-title":"Java"
+                                        },
+                                        {
+                                            "sub-categories-title":"Python"
+                                        },
+                                        {
+                                            "sub-categories-title":"Hadoop"
+                                        },
+                                        {
+                                            "sub-categories-title":"PHP"
+                                        },
+                                        {
+                                            "sub-categories-title":"Golang"
+                                        },
+                                        {
+                                            "sub-categories-title":"C++"
+                                        },
+                                        {
+                                            "sub-categories-title":"Ruby"
+                                        },
+                                        {
+                                            "sub-categories-title":"Node.js"
+                                        },
+                                        {
+                                            "sub-categories-title":"JavaScript"
+                                        },
+                                        {
+                                            "sub-categories-title":"Angular"
+                                        },
+                                        {
+                                            "sub-categories-title":"React"
+                                        },
+                                        {
+                                            "sub-categories-title":"iOS"
+                                        },
+                                        {
+                                            "sub-categories-title":"Android"
+                                        },
+                                        {
+                                            "sub-categories-title":"Xamarin"
+                                        },
+                                        {
+                                            "sub-categories-title":"Cordova"
+                                        },
+                                        {
+                                            "sub-categories-title":"Flutter"
+                                        },
+                                        {
+                                            "sub-categories-title":"SharePoint/Office 365"
+                                        },
+                                        {
+                                            "sub-categories-title":"Dynamics 365"
+                                        },
+                                        {
+                                            "sub-categories-title":"Salesforce"
+                                        },
+                                        {
+                                            "sub-categories-title":"Magento"
+                                        },
+                                        {
+                                            "sub-categories-title":"ServiceNow"
+                                        },
+                                        {
+                                            "sub-categories-title":"QRadar SIEM"
+                                        },
+                                        {
+                                            "sub-categories-title":"Blockchain"
+                                        },
+                                        {
+                                            "sub-categories-title":"AI"
+                                        },
+                                        {
+                                            "sub-categories-title":"AR/VR"
+                                        },
+                                        {
+                                            "sub-categories-title":"IoT"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Project manager",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Business analyst",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "UX analyst",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "UX/UI designer",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Consultant",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Data scientist",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Architect",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Scrum master",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Tester",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "Test automation engineer",
+                            "type": "checkbox",
+                            "include": ""
+                        },
+                        {
+                            "name": "DevOps engineer",
+                            "type": "checkbox",
+                            "include": ""
+                        }
+                    ],
+                    "isRequired": "yes"
+                }
+            ],
+            "dom-class": "col-1-1"
+        }
+    }
+]
