@@ -13,6 +13,7 @@
                             "categories": [
                                 {
                                     "categories-title":"Technology",
+                                    "categories-type":"select",
                                     "sub-categories":[
                                         {
                                             "sub-categories-title":"Backend"
@@ -105,13 +106,54 @@
                                             "sub-categories-title":"IoT"
                                         }
                                     ]
+                                },
+                                {
+                                    "categories-title":"Seniority",
+                                    "categories-type":"select",
+                                    "sub-categories":[
+                                        {
+                                            "sub-categories-title":"Junior"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "categories-title":"Duration",
+                                    "categories-type":"select",
+                                    "sub-categories":[
+                                        {
+                                            "sub-categories-title":"Less than a month"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "categories-title":"# of specialists",
+                                    "categories-type":"select",
+                                    "sub-categories":[
+                                        {
+                                            "sub-categories-title":"1"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "categories-title":"Add comment",
+                                    "categories-type":"input"
                                 }
                             ]
                         },
                         {
                             "name": "Project manager",
                             "type": "checkbox",
-                            "include": ""
+                            "include": "",
+                            "categories": [
+                                {
+                                    "categories-title":"Duration",
+                                    "sub-categories":[
+                                        {
+                                            "sub-categories-title":"Less than a month"
+                                        }
+                                    ]
+                                }
+                            ]
                         },
                         {
                             "name": "Business analyst",

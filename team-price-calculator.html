@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Team price Cost Calculator</title>
+    <title>Multi-Step Cost Calculator</title>
     <style>
         body { font-family: Arial, sans-serif; margin: 20px; background-color: #f4f4f4; }
         .container { max-width: 900px; margin: auto; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
@@ -40,12 +40,14 @@
         .col-1-2-1 .question-container:nth-child(1) .dom-class-column .textarea-row textarea{width: 100%;flex: 1; height: 80px;resize: none;}
         .col-2-1-2 {column-count: 2;}
         .col-2-1.active {float: left;}
-        .form-row{display: flex;}
+        .form-row{display: flex;padding:10px;}
         .column-1{flex: 1 1 0%;}
         .column-2{flex: 2 1 0%;}
         .toggle-row label { width: auto; display: inline-block;}
         .categories-container select {margin-left: 5px;min-width: 100px;}
-        </style>
+        .categories-name{margin-top:0;}
+        .column-2 {box-shadow: 0 2px 30px 0 #ddd;padding: 20px;}
+    </style>
 </head>
 <body>
     <div class="container">
@@ -198,9 +200,6 @@
     // Create outer row with flex
     const row = document.createElement("div");
     row.classList.add("form-row");
-    row.style.display = "flex";
-    row.style.gap = "40px";
-    row.style.alignItems = "start";
 
     // Column 1: Checkbox
     const col1 = document.createElement("div");
@@ -263,6 +262,7 @@
         categoriesContainer.classList.add("categories-container");
 
         option.categories.forEach(category => {
+            if (category["categories-type"] === "select") {
             const select = document.createElement("select");
             select.name = `${inputName}-${category["categories-title"]}`;
             select.style.display = "inline-block";
@@ -282,7 +282,14 @@
             });
 
             categoriesContainer.appendChild(select);
-        });
+        }
+        else if (category["categories-type"] === "input") {
+        const input = document.createElement("input");
+        input.type = "text";
+        input.name = `${inputName}-${category["categories-title"]}`;
+        input.placeholder = category["categories-title"];
+        categoriesContainer.appendChild(input);
+    }});
 
         parentDiv.appendChild(categoriesContainer);
     }
